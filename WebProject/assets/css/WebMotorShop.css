@@ -1,0 +1,248 @@
+* {
+  font-family: "League Spartan", sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+.navbar {
+  background-color: #e5e5e5;
+  box-shadow: 2px 3px 5px black;
+}
+
+.Navbar-toggler-icon {
+  color: black;
+}
+
+.logoAndName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.Motopart_Logo {
+  width: 50px;
+  height: auto;
+}
+
+.Shop_name {
+  display: flex;
+  margin-top: 3px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.RedColorName {
+  color: #ff1924;
+}
+
+.NavHovered:hover {
+  color: white;
+  background-color: #ff1924;
+  border-radius: 10px;
+}
+
+.Log_SignButton {
+  padding: 0px 10px 10px;
+  gap: 5px;
+}
+
+.Log_SignButton button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.loginButton {
+  background-color: #028c4a;
+}
+
+@media (max-width: 800) {
+  .Log_SignButton {
+    width: 180px;
+  }
+}
+
+.signupButtom {
+  background-color: #028c4a;
+  color: white;
+}
+
+.MotoNeeds-Color {
+  color: #00b2ff;
+}
+
+.BookBtn {
+  background-color: #ff1924;
+  color: white;
+  border-radius: 12px;
+}
+
+/* thois is for the content after the navigations */
+.background {
+  position: relative;
+  color: white;
+  padding: 5rem 0;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://assets.onecompiler.app/42yspnca4/43e6ptzjv/1000020081.jpg") no-repeat center center/cover;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.background .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+
+/* Remove Button */
+.remove-btn {
+  background: var(--primary-red);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s;
+}
+
+.remove-btn:hover {
+  background: #e63946;
+}
+
+/* Price */
+.price-highlight {
+  color: var(--primary-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.total-highlight {
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Summary Card */
+.summary-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-top: 5px solid var(--primary-green);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Empty Cart State */
+.empty-cart-state {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 2px dashed var(--dark-gray);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.empty-cart-icon {
+  background: white;
+  color: var(--primary-red);
+  font-size: 5rem;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-outline-primary {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background: var(--primary-red);
+  color: white;
+}
+
+/* Badge */
+.category-badge {
+  background: var(--primary-blue);
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+
+
+
+/* check out btn */
+
+.checkoutBtn {
+  border: 1px solid white;
+  transition: all 0.3s ease;
+  color: black;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(2, 2, 2, 0.1);
+}
+
+.checkoutBtn:hover {
+  border: none;
+  color: whitesmoke;
+  background-color: #ff1924;
+  transform: translateY(-5px);
+}
+
+
+/*for the view orders pictures*/
+
+.fixedSize_orderImgs {
+
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
